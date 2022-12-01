@@ -7,6 +7,8 @@
 <body>
 <p>Здравствуйте! Для начала работы добавьте первого пользователя</p>
 <p></p>
-<a href="/addUser">Добавить пользователя</a>
+<form th:method="GET" th:action="@{/addUser}" >
+    <input type="submit" value="Добавить пользователя">
+</form>
 </body>
 </html>
